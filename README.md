@@ -3,7 +3,7 @@
 jQuery plugin to provide a simple responsive gallery. Support for albums and image lazyload.
 
 ### Screenshot
-![Desktop](./screeshot.png)
+![Desktop](https://cloud.githubusercontent.com/assets/2173645/19683867/cf8336a4-9ad1-11e6-9441-da30fca426a3.jpg)
 
 
 ### Usage
