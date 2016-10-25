@@ -1,0 +1,20 @@
+{
+  "name": "jsGallery",
+  "description": "My first attempt at creating a jquery plugin",
+  "author": "Anurag Saini <anuragsn7@gmail.com>",
+  "license": "MIT",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://anuragsn7@bitbucket.org/anuragsn7/jsgallery.git"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-nodeunit": "~0.4.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}

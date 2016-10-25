@@ -1,0 +1,16 @@
+/* Just some font I like */
+
+@font-face {
+  font-family: 'Martel Sans Regular';
+  src: url('#{$icomoon-font-path}/MartelSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Martel Sans Light';
+  src: url('#{$icomoon-font-path}/MartelSans-Light.ttf') format('truetype');
+  font-weight: 100;
+}
+
+$martel-sans-regular: 'Martel Sans Regular';
+$martel-sans-light: 'Martel Sans Light';

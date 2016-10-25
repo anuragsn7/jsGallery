@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jsGallery Test</title>
+
+
+    <link rel="stylesheet" href="../dist/css/jsGallery.css">
+</head>
+<body>
+
+
+    <div id="jsGallery" style="display: none;" data-title="This a is demo gallery.">
+        <span data-album-name="My Pictures" data-src="images/01.jpg" data-thumbnail="images/thumbnails/01.jpg" data-alt="Some random picture"></span>
+        <span data-album-name="My Pictures" data-src="images/02.jpg" data-thumbnail="images/thumbnails/02.jpg" data-alt="Second picture in this album"></span>
+        <span data-album-name="My Pictures" data-src="images/03.jpg"></span>
+        <span data-album-name="My Pictures" data-src="images/04.jpg" data-thumbnail="images/thumbnails/04.jpg"></span>
+
+        <span data-album-name="Space stuff" data-src="images/A.jpg" data-thumbnail="images/thumbnails/A.jpg"></span>
+        <span data-album-name="Space stuff" data-src="images/B.jpg" data-thumbnail="images/thumbnails/B.jpg" data-alt="Second image in the second album"></span>
+        <span data-album-name="Space stuff" data-src="images/C.jpg" data-thumbnail="images/thumbnails/C.jpg"></span>
+
+        <span data-album-name="Earth stuff" data-src="images/P.jpg" data-thumbnail="images/thumbnails/P.jpg"></span>
+        <span data-album-name="Earth stuff" data-src="images/Q.jpg"></span>
+        <span data-album-name="Earth stuff" data-src="images/R.jpg" data-thumbnail="images/thumbnails/R.jpg"></span>
+
+        <span data-album-name="Random Album 1" data-src="images/A.jpg" data-thumbnail="images/thumbnails/A.jpg"></span>
+        <span data-album-name="Random Album 2" data-src="images/B.jpg" data-thumbnail="images/thumbnails/B.jpg" data-alt="Second image in the second album"></span>
+        <span data-album-name="Random Album 3" data-src="images/C.jpg" data-thumbnail="images/thumbnails/C.jpg"></span>
+    </div>
+
+    <div style="margin: 20px auto; width: 20%;">
+        <button id="showGal">Show Gallery</button>
+    </div>
+
+    <!--  You can simply use files hosted by Google
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    -->
+    <script src="../dist/js/jquery-3.1.0.min.js"></script>
+    <script src="../dist/js/jsGallery.js"></script>
+    <script>
+        var gal = $('#jsGallery').jsGallery({
+            showAlbums: true,
+            connectAlbums: true
+        });
+
+        var gal = $('#jsGallery').jsGallery();
+
+        gal.jsGallery('show');
+
+        $('#showGal').click(function(){
+            gal.jsGallery('show', 'Earth Stuff', 1);
+        });
+    </script>
+</body>
+</html>
